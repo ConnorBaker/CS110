@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<!-- NOTE: According to HTML5, the <html>, <head>, and <body> tags can be
+omitted. However, I have elected to keep the <body> tag. Source:
+https://www.w3schools.com/html/html_head.asp -->
+
+<!-- OMITTED -->
+<!-- <html> -->
+
+
+<!-- Taken from
+https://www.w3schools.com/css/tryit.asp?filename=trycss_font_responsive
+Allows us to create a responsive webpage -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- OMITTED -->
+<!-- <head> -->
+
+<!-- Title of the webpage (shows in browser bar) -->
+<title> A Debt Uncollected</title>
+
+<!-- BEGIN THE BASIS OF THE DESIGN OF THE WEBSITE -->
+<!-- Much of this was taken from
+  https://developers.google.com/fonts/docs/getting_started -->
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora|Roboto:400,700,italic">
+<style>
+  /* Help from https://stackoverflow.com/questions/11679567/using-css-for-fade-in-effect-on-page-load */
+  #anim_fadein {
+    animation: fadein 1s ease-in-out;
+    /* Firefox */
+    /* -moz-animation: fadein 1s ease-in-out; */
+    /* Safari and Chrome */
+    /* -webkit-animation: fadein 1s ease-in-out; */
+    /* Opera */
+    /* -o-animation: fadein 1s ease-in-out; */
+  }
+
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* @-moz-keyframes fadein { */
+  /* Firefox */
+  /* from { opacity: 0; }
+      to { opacity: 1; }
+    } */
+
+  /* @-webkit-keyframes fadein { */
+  /* Safari and Chrome */
+  /* from { opacity: 0; }
+      to { opacity: 1; }
+    } */
+
+  /* @-o-keyframes fadein { */
+  /* Opera */
+  /* from { opacity: 0; }
+      to { opacity: 1; }
+    } */
+
+  h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 3vw;
+    font-size: -webkit-calc(3vw + 36px);
+    font-size: -moz-calc(3vw + 36px);
+    font-size: calc(3vw + 36px);
+    text-align: center;
+  }
+
+  h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 2vw;
+    font-size: -webkit-calc(2vw + 8px);
+    font-size: -moz-calc(2vw + 8px);
+    font-size: calc(2vw + 8px);
+    text-align: center;
+    color: rgb(125,125,125);
+  }
+
+  h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+  }
+
+  h4 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+  }
+
+  body {
+    margin: 10vw 10vw 10vw 10vw;
+    font-family: "Lora", serif;
+    font-size: 18px;
+    text-align: justify;
+    overflow-wrap: break-word;
+  }
+
+  /* Inspired by https://www.w3.org/Style/Examples/007/center.en.html */
+  .vhcentered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+  }
+
+  /* Taken from https://www.w3schools.com/css/css3_shadows.asp and modified to center the image */
+  .polaroid {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 3em;
+    height: auto;
+    text-align: center;
+  }
+
+  .quote {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 18px;
+  }
+
+  .worksCited {
+    padding-left: 4em;
+    text-indent: -4em;
+    text-align: left;
+    font-family: Lora, serif;
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .full_page {
+    height: 95vh;
+    width: 90vw;
+  }
+</style>
+<!-- OMITTED -->
+<!-- </head> -->
+
+
+<!-- BEGIN THE BODY OF THE WEBSITE -->
+
+<body>
+  <div class="full_page">
+  <div id="anim_fadein" class="vhcentered">
+    <h1>
+      Claude Shannon:<br>
+      A Debt Uncollected<br>
+    </h1>
+    <h2 style="page-break-after: always;">
+      A Review by Connor Baker<br>
+      Current GMU CS Student<br>
+      Find out more at <a href="https://cs.gmu.edu" target="_blank" style="color: rgb(125,125,125);">cs.gmu.edu</a>
+    </h2>
+  </div>
+</div>
+
+  <figure style="margin-bottom: 15vw;">
+    <div class="polaroid">
+      <img src="https://timedotcom.files.wordpress.com/2016/04/shannon.jpeg" alt="ShannonAndMouse" style="width:100%; box-shadow: 0 0 2vw 0vw rgba(0, 0, 0, 0.1), 0 0.5vw 1vw 0 rgba(0, 0, 0, 0.2); max-width: 750px;">
+    </div>
+    <figcaption>Dr. Claude E Shannon talking about his electronic mouse Thesus, which was controlled by an electronic circuit and could move around a labyrinth, on May 10, 1952. Retrieved from <a href="https://timedotcom.files.wordpress.com/2016/04/shannon.jpeg" target="_blank" style="color: rgb(0,0,0);">https://timedotcom.files.wordpress.com/2016/04/shannon.jpeg</a>.</figcaption>
+  </figure>
+
+  <h3>A Brief Overview (TL;DR)</h3>
+  <h4>Birth</h4>
+  <p>Claude Shannon was born in Gaylord, Michigan, in <b>April, 1916</b> to Claude Sr. and Mabel Wolf.</p>
+
+  <h4>Death</h4>
+  <p>Claude Shannon died on <b>February 24, 2001</b> at the age of <b>84</b> after a prolonged battle with early onset Alzheimer's.</p>
+
+  <h4>Legacy</h4>
+  <p>To quote the section <i>Life and Legacy</i> from the body of my paper (which is reproduced in full below):</p>
+  <aside>
+    <blockquote>
+      <div class="quote">
+        <p>In 1948, Claude Shannon "invented, in a single stroke, the idea of information" (Soni and Goodman xi - xii). In the years since he died in 2001, humanity has become ever more engulfed in the world he made possible, "and every email we have ever
+          sent, every DVD and sound file we have ever played, and every Web page we have ever loaded bears a debt to Claude Shannon" (Soni and Goodman xi - xii). Had Shannon's work never been published, the telecom giants we know today would not exist as
+          they are, nor would any system of electronic communication. Indeed, "the internet as we know it could not have been created" (Lewbel).</p>
+      </div>
+    </blockquote>
+  </aside>
+
+
+  <h3>Early Childhood</h3>
+  <p>Claude Shannon was born in Gaylord, Michigan in April, 1916 to Claude Senior and his wife Mabel, both of whom were described as "bright threads in Gaylord's fabric" (Soni and Goodman 6). His father was a jack-of-all trades, serving as a
+    carpenter, furniture salesman, and later a probate Judge (Soni and Goodman 6). Unlike most women of the time that were born and raised in rural states, Claude's mother Mabel was a college graduate and found work as an educator, and later
+    administrator, at the county school (Soni and Goodman 7). Claude's childhood was spent fascinated with toy planes and mechanical contraptions, radios, morse code, and a homemade elevator that he and a neighbor's son <i>built in a barn</i>, much to the
+    concern of their parents (Soni and Goodman 11).</p>
+
+  <p>Unlike the childhood of other geniuses, Claude Shannon's upbringing seems devoid of abuse or trauma; if there was any defining characteristic of his early years, it is that he spent the majority of them in the shadow of his older sister. He
+    admitted later in his life that his sister's voracity for mathematics had sparked his initial interest in the subject (Soni and Goodman 9). He graduated a year ahead of the classmates he had entered into high school with, and his grades, though
+    a respectable smattering of A's and B's, fell short of his older sister's <i>academic perfection</i> (Soni and Goodman 10) &mdash; an oddity considering how quickly the young boy excelled in subjects in which he showed obvious interest. Soni and
+    Goodman,
+    authors of the autobiography A Mind at Play: How Claude Shannon Invented the Information Age, give insight:</p>
+
+  <aside>
+    <blockquote>
+      <div class="quote">
+        <p>He loved science and disliked facts. Or rather, he disliked the kind of facts that he couldn't bring under a rule and abstract his way out of. Chemistry in particular tested his patience. It "always seems a <b>little dull</b> to me," he wrote
+          his
+          science teacher years after; "too many isolated facts and too few general principles for my taste." (10)</p>
+      </div>
+    </blockquote>
+  </aside>
+
+
+  <h3>Time at University</h3>
+  <h4>Undergraduate Studies</h4>
+  <p>Shannon went on to attend college at the University of Michigan studying, simultaneously, mathematics and engineering (Soni and Goodman 13, 16). His extracurriculars painted him as a man of many interests: they included the Radio Club, Math
+    Club, and the gymnastics team (Soni and Goodman 17). Even in college, Claude still had the brain of a tinkerer, and it was in no way idle; his mind worked over problems that interested him, constructing solutions as it did so. In 1934, one such
+    solution put forth by the then-seventeen year old Claude Shannon was published in the journal of the Mathematical Association of America; another solution was published again in the same journal the following year (Soni and Goodman 19).</p>
+
+  <h4>Graduate Studies</h4>
+  <p>After graduating, Shannon went to work at the Massachusetts Institute of Technology (MIT) in the fall of 1936, having seen a posted note on a bulletin board looking for a master's student to work on a differential analyzer, a piece of hardware
+    that solves differential equations by integration. The head of the team working on the machine, Vannevar Bush, a man who would "shape the rest of Shannon's life and the course of American science," recognized something in Claude and appointed
+    him in charge of analyzer's most complex part, tasking him with improving its performance or finding a way to do without it (Soni and Goodman 20). Shannon spent three years at MIT, working in a small, gray, windowless room with the differential
+    analyzer: circuits humming, switches throwing themselves open and close &mdash; nearly a full year of this (Soni and Goodman 34). The monotony was broken only by the summer of 1937, when he became an intern at Bell Laboratories (Soni and Goodman
+    38).
+    During his time there, he thought of the differential analyzer, and of its hundreds of switches humming alternating between on and off. He also though of symbolic logic, to which he was first introduced during a philosophy course: something
+    about the simplicity of true and false, two singular options, and a circuit's flipping on and off ate at him.</p>
+
+  <p>It is to George Boole that mathematics owes the invention of Boolean Algebra, but it is to Claude Shannon and his master's thesis A Symbolic Analysis of Relay and Switching Circuits, published in 1937 "to career-making applause," that computer
+    engineering owes the full realization of Boole's algebra in creating machines able to evaluate mathematical expressions (Soni and Goodman 39). Shannon showed that Boole's algebra was exactly equivalent to certain arrangements of circuits and
+    switches, and proposed designs for selective circuits, electronic combination locks and alarms, a vote counting circuit, and an electronic adder, among other things (Shannon, 52-61). Shannon's work "became the basic concept underlying all
+    digital computers" (Isaacson 49). Its announcement (paired with the invention of the transistor by some of Shannon's colleagues a decade later) sounded the death-knell of analog, physical phenomena driven computing, to which Vannevar Bush,
+    Shannon's advisor, had devoted 15 years of his life, and ushered in the age of circuit powered digital computing. Bush saw Shannon's potential, and as "one of the most powerful figures in American science" and Shannon's advisor advocated that he
+    pursue mathematics, not electrical engineering. Shortly thereafter, Shannon was accepted into MIT's doctoral program for mathematics (Soni and Goodman 48).</p>
+
+  <p>In the spring of 1940, Shannon graduated with simultaneous master's and doctoral degrees (Soni and Goodman 63). Though a brilliant academic, Shannon was not content with the idea of resting on his laurels and enjoying the then-comfortable life
+    of professorship. He "had proven himself the kind of mathematician who could stand on his own two feet outside the academy, whose work might result in more than a university chair" (Soni and Goodman 64). During the summer of 1940, he returned to
+    Bell Labs, "the country's intellectual utopia" (Gertner 1); this time, as a full-time mathematician in their research department.</p>
+
+  <h3>Bell Labs</h3>
+  <p>Shannon's time at Bell Labs bore fruit, though his co-workers were largely unaware of the fact until they saw an article bearing his name in the July 1948 publication of The Bell System Technical Journal. Shannon was a fiercely private man
+    throughout nearly the entirety of his life, and worked on many things in complete isolation. Perhaps that is why his paper, A Mathematical Theory of Communication, came as such as surprise &mdash; Shannon's colleague and Nobel Prize winner John
+    Pierce later went on to say "[it] came as a bomb" (Pierce 4).</p>
+
+  <p>Shannon's idea was this: when communicating over some medium, the meaning of the message does not matter &mdash; its content matters if only if can be exploited to create an efficient coding of the content (Shannon 379). Robert Gallager, a
+    renowned
+    electrical engineer known for his work on information theory, summarizes the impact of Shannon's work: "For everybody who built communication systems, before [Shannon], it was a matter of trying to find a way to send a voice" as a waveform, a
+    very complex digital object. Claude's idea changed that: engineers need only focus on "ways of digitizing things and of storing and of communicating these very simple objects called binary digits." It was like a light-switch was flipped on:
+    explosive progress rippled throughout industry as new hardware and algorithm designs took advantage of Shannon's idea. "If you look at it that way, Shannon is really responsible for the digital revolution" (Soni and Goodman 236).</p>
+
+  <p>Shannon's simple idea of communication, that the listener was the one that attributed meaning to a message, that the meaning of the message had nothing to do with the way it was stored, transmitted, or received, had consequences that were only
+    fully recognized later in his life. The advent and use of software that enables compact storage devices like CDs and DVDs were based heavily on his works. Even the internet protocol suite, the software which enables the largest man-made system
+    of communication in existence, would not have been possible without his work.</p>
+
+  <p>Shannon, to the surprise of his colleagues, was largely disinterested in these applications. He took joy in the fact that the field he had founded was explosively disruptive, of course, but he did things not for money or for fame, but because
+    they interested him. He was a mathematician at heart, and had finally scratched a mathematical itch that he had since he started working on Bush's differential analyzer.</p>
+
+  <h3>Later Life and Legacy</h3>
+  <p>In 1948, Claude Shannon "invented, in a single stroke, the idea of information" (Soni and Goodman xi - xii). In the years since he died in 2001, humanity has become ever more engulfed in the world he made possible, "and every email we have ever
+    sent, every DVD and sound file we have ever played, and every Web page we have ever loaded bears a debt to Claude Shannon" (Soni and Goodman xi - xii). Had Shannon's work never been published, the telecom giants we know today would not exist as
+    they are, nor would any system of electronic communication. Indeed, "the internet as we know it could not have been created" (Lewbel).</p>
+
+
+  <h3>Works Cited</h3>
+  <div class="worksCited">
+    <p>Gertner, Jon. The Idea Factory: Bell Labs and the Great Age of American Innovation. Penguin Books, 2013.</p>
+    <p>Isaacson, Walter. The Innovators: How a Group of Hackers, Geniuses, and Geeks Created the Digital Revolution. Simon & Schuster Paperbacks, 2015.</p>
+    <p>Lewbel, Arthur. A Personal Obituary for Claude Shannon. <a href="https:/www2.bc.edu/arthur-lewbel/Shannon.html" target="_blank" style="color: rgb(0,0,0);">www2.bc.edu/arthur-lewbel/Shannon.html</a>.</p>
+    <p>Pierce, J. "The Early Days of Information Theory." Information Theory, IEEE Transactions On, vol. 19, no. 1, IEEE, pp. 3-8, doi:10.1109/TIT.1973.1054955.</p>
+    <p>Shannon, Claude. "A Mathematical Theory of Communication." Bell System Technical Journal, vol. 27, no. 3, Blackwell Publishing Ltd, pp. 379-423, doi:10.1002/j.1538-7305.1948.tb01338.x.</p>
+    <p>Shannon, Claude. "A Symbolic Analysis of Relay and Switching Circuits." DSpace@MIT, Massachusetts Institute of Technology, 1 Jan. 1970, <a href="https://dspace.mit.edu/handle/1721.1/11173" target="_blank" style="color: rgb(0,0,0);">dspace.mit.edu/handle/1721.1/11173</a>.</p>
+    <p>Soni, Jimmy, and Rob Goodman. A MIND AT PLAY: How Claude Shannon Invented the Information Age. Simon & Schuster, 2017.</p>
+  </div>
+</body>
+
+</html>
